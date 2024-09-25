@@ -18,8 +18,8 @@ import org.testng.annotations.Test;
 
 public class WindowControlsUsingAutoiIT {
 	
-	@Test
-	public void uploadFile() throws IOException, InterruptedException {
+	
+	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		String downloadPath=System.getProperty("user.dir")+"\\Downloads";
 		
