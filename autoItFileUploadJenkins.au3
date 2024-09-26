@@ -1,6 +1,8 @@
 
 ; Get the Jenkins workspace path from the environment variable
 Global $workspacePath = EnvGet("WORKSPACE")
+;EnvGet Function: EnvGet("WORKSPACE") retrieves the path to the Jenkins workspace where your project files are checked out.
+;File Path: The $filePath variable constructs the full path to your Excel file located in the Downloads folder of the Jenkins workspace.
 
 ; Set focus to the "Open" dialog's Edit control
 ControlFocus("Open", "", "Edit1")
