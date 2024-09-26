@@ -2,7 +2,7 @@
 ControlFocus("Open", "", "Edit1")
 
 ; Get the file path to the Excel file
-Global $filePath = @ScriptDir & "\Downloads\download.xlsx"
+Global $filePath = @ScriptDir & "\..\Downloads\download.xlsx"
 
 ; Set the text in the Edit control to the file path
 ControlSetText("Open", "", "Edit1", $filePath)
