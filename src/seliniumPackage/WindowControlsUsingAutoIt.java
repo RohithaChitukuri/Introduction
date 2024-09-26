@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WindowControlsUsingAutoiIT {
+public class WindowControlsUsingAutoIt {
 	
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
