@@ -1,8 +1,12 @@
+
+; Get the Jenkins workspace path from the environment variable
+Global $workspacePath = EnvGet("WORKSPACE")
+
 ; Set focus to the "Open" dialog's Edit control
 ControlFocus("Open", "", "Edit1")
 
-; Get the file path to the Excel file
-Global $filePath = @ScriptDir & "\..\Downloads\download.xlsx"
+; Set the path to the file in the Downloads folder
+Global $filePath = $workspacePath & "\Downloads\download.xlsx"
 
 ; Set the text in the Edit control to the file path
 ControlSetText("Open", "", "Edit1", $filePath)
