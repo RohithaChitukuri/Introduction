@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WindowControlsUsingAutoIt {
+public class WindowControlsUsingAutoItLocal {
 	
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
@@ -51,7 +51,7 @@ public class WindowControlsUsingAutoIt {
 		
 		//if file is downloaded,upload it
 		if(file.exists()) {
-			Runtime.getRuntime().exec("C:\\Users\\SUNNY\\eclipse-workspace\\Introduction\\autoItFileUpload.exe");
+			Runtime.getRuntime().exec("C:\\Users\\SUNNY\\eclipse-workspace\\Introduction\\autoItFileUploadLocal.exe");
 		}
 		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement toastMsg=driver.findElement(By.cssSelector(".Toastify__toast-body div:nth-child(2)"));
